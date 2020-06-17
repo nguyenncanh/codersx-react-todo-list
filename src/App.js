@@ -3,22 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const todos = ["Go to market", "Buy food", "Making dinner"];
+  const content = todos.map((item) => {
+    let li = <li>{item}</li>;
+    return li;
+  });
+  const ul = <ul>{content}</ul>;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {ul}
     </div>
   );
 }
