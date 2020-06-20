@@ -1,0 +1,45 @@
+.TabMenu {
+    font-family: 'Roboto', sans-serif;
+}
+
+.TabMenu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.TabMenu ul li {
+    width: 120px;
+    height: 90px;
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    background-color: rgba(221, 221, 221, 0.5);
+    text-align: center;
+    padding: 25px;
+    line-height: 20px;
+}
+
+.TabMenu ul li a .name {
+    font-size: 11px;
+    color: #8E8E8E;
+}
+
+i::before {
+    margin: 0 !important;
+    font-size: 28px !important;
+    color: #8E8E8E !important;
+}
+
+.TabMenu ul li:hover a i:before, .TabMenu ul li:hover a .name {
+    color: #8CDC52 !important;
+}
+
+.TabMenu ul li:hover {
+    background-color: #fff;
+    border-top: 1px solid #8CDC52;
+    box-shadow: 0px 4px 10px #888888;
+}
+
+
+

@@ -15,15 +15,15 @@ class LoginForm extends Component {
                         <input type="password" required></input>
                         <div className="placeholder">Password</div>
                     </div>
-                    <button class="btn">Sign in to CodersX</button>
+                    <button className="btn">Sign in to CodersX</button>
                     <div className="checkbox">
                         <input type="checkbox"></input>
                         <div className="fas fa-check"></div>
                         Keep me signed in
                     </div>
                     <div className="link-forgot">
-                        <a href="#">Forgot username?</a>
-                        <a href="#">Forgot password?</a>
+                        <a href="!#">Forgot username?</a>
+                        <a href="!#">Forgot password?</a>
                     </div>
                 </form>
             </div>
