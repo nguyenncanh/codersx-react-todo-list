@@ -11,12 +11,14 @@ function App() {
     { label: 'UPLOAD' },
     { label: 'WORK' },
     { label: 'SETTINGS' }
-  ]
+  ];
+
+  var email = 'abc@example.com'
   return (
     <div className="App">
-      {/* <Header />
-      <LoginForm /> */}
-      <TabMenu title={items}/>
+      {/* <Header />*/}
+      <LoginForm email={email}/>
+      {/* <TabMenu title={items}/> */}
     </div>
   );
 }

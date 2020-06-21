@@ -8,7 +8,7 @@ class LoginForm extends Component {
                 <form action="#" className="login-form">
                     <h1>Sign in</h1>
                     <div className="textb">
-                        <input type="text" required></input>
+                        <input type="text" required placeholder={this.props.email}></input>
                         <div className="placeholder">Username</div>
                     </div>
                     <div className="textb password">
