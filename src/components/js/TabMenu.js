@@ -3,47 +3,48 @@ import "../css/TabMenu.css";
 
 class TabMenu extends Component {
     render() {
+        var items = this.props.title
         return (
             <div className="TabMenu">
                 <ul>
                     <li>
                         <a href='!#'>
                             <div className="icon">
-                                <i class="flaticon-home"></i>
+                                <i className="flaticon-home"></i>
                             </div>
-                            <div className="name">HOME</div>
+                            <div className="name">{items[0].label}</div>
                         </a>
                     </li>
                     <li>
                         <a href='!#'>
                             <div className="icon">
-                                <i class="flaticon-gift"></i>
+                                <i className="flaticon-gift"></i>
                             </div>
-                            <div className="name">DEALS</div>
+                            <div className="name">{items[1].label}</div>
                         </a>
                     </li>
                     <li>
                         <a href='!#'>
                             <div className="icon">
-                                <i class="flaticon-upload"></i>
+                                <i className="flaticon-upload"></i>
                             </div>
-                            <div className="name">UPLOAD</div>
+                            <div className="name">{items[2].label}</div>
                         </a>
                     </li>
                     <li>
                         <a href='!#'>
                             <div className="icon">
-                                <i class="flaticon-food"></i>
+                                <i className="flaticon-food"></i>
                             </div>
-                            <div className="name">WORK</div>
+                            <div className="name">{items[3].label}</div>
                         </a>
                     </li>
                     <li>
                         <a href='!#'>
                             <div className="icon">
-                                <i class="flaticon-settings"></i>
+                                <i className="flaticon-settings"></i>
                             </div>
-                            <div className="name">SETTINGS</div>
+                            <div className="name">{items[4].label}</div>
                         </a>
                     </li>
                 </ul>
