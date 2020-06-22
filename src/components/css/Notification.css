@@ -1,5 +1,6 @@
 .Notification .bell {
     font-weight: bold;
+    cursor: pointer;
 }
 
 .Notification .circle {
