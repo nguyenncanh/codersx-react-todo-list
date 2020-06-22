@@ -1,0 +1,46 @@
+.FollowFriendListItem {
+    display: flex;
+    width: 100%;
+    height: 38px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.FollowFriendListItem:last-child {
+    margin-bottom: 0;
+}
+
+.FollowFriendListItem .user {
+    display: flex;
+}
+
+.FollowFriendListItem .user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.FollowFriendListItem .user .info {
+    padding-top: 1px;
+}
+
+.FollowFriendListItem .user .info .name {
+    font-size: 14px;
+    line-height: 16px;
+    color: #262626
+}
+
+.FollowFriendListItem .user .info .recomment {
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+}
+
+.FollowFriendListItem .follow {
+    font-size: 12px;
+    line-height: 38px;
+    font-weight: 550;
+    text-align: center;
+    color: #1876F2;
+}

@@ -1,0 +1,38 @@
+.RecommendedFriends {
+    border: 1px solid #DDDDDD;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 320px;
+    height: 100%;
+    padding: 10px 14px 0px 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.RecommendedFriends .recommend-header {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.RecommendedFriends .recommend-header .title {
+    font-weight: 540;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #999999;
+}
+
+.RecommendedFriends .recommend-header .see-all {
+    font-size: 12px;
+    line-height: 16px !important;
+    text-align: center;
+    color: #262626;
+    line-height: 10px;
+}
+
+.RecommendedFriends .content {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
