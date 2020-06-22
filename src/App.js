@@ -5,6 +5,7 @@ import LoginForm from './components/js/LoginForm';
 import TabMenu from './components/js/TabMenu';
 import RecommendedFriends from './components/js/RecommendedFriends';
 import FollowFriendListItem from './components/js/FollowFriendListItem';
+import Table from './components/js/Table';
 import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -34,6 +35,26 @@ class App extends Component {
         name: 'nguyenvy'
       }
     ];
+    this.userInfos = [
+      {
+        first: 'Mark',
+        last: 'Otto',
+        handle: '@mdo',
+        isEven: true
+      },
+      {
+        first: 'Jacob',
+        last: 'Thornton',
+        handle: '@fat',
+        isEven: false
+      },
+      {
+        first: 'Mark',
+        last: 'Otto',
+        handle: '@mdo',
+        isEven: true
+      },
+    ]
   }
   render() {
     return (
@@ -42,7 +63,8 @@ class App extends Component {
         {/* <LoginForm email={email}/> */}
         {/* <TabMenu title={items}/> */}
 
-        <RecommendedFriends friends={this.users.map((user, index) => <FollowFriendListItem key={index} user={user} />)} />
+        {/* <RecommendedFriends friends={this.users.map((user, index) => <FollowFriendListItem key={index} user={user} />)} /> */}
+        <Table userInfos={this.userInfos}/>
 
       </div>
     );
