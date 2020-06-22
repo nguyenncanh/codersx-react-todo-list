@@ -6,6 +6,7 @@ import TabMenu from './components/js/TabMenu';
 import RecommendedFriends from './components/js/RecommendedFriends';
 import FollowFriendListItem from './components/js/FollowFriendListItem';
 import Table from './components/js/Table';
+import Notification from "./components/js/Notification";
 import { render } from '@testing-library/react';
 
 class App extends Component {
@@ -18,7 +19,6 @@ class App extends Component {
   // ];
 
   // var email = 'abc@example.com';
-
   constructor() {
     super();
     this.users = [
@@ -54,7 +54,8 @@ class App extends Component {
         handle: '@mdo',
         isEven: true
       },
-    ]
+    ];
+    this.hasUnread = true;
   }
   render() {
     return (
@@ -64,8 +65,8 @@ class App extends Component {
         {/* <TabMenu title={items}/> */}
 
         {/* <RecommendedFriends friends={this.users.map((user, index) => <FollowFriendListItem key={index} user={user} />)} /> */}
-        <Table userInfos={this.userInfos}/>
-
+        {/* <Table userInfos={this.userInfos}/> */}
+        <Notification hasUnread={this.hasUnread} />
       </div>
     );
   };

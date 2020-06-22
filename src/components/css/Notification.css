@@ -1,0 +1,14 @@
+.Notification .bell {
+    font-weight: bold;
+}
+
+.Notification .circle {
+    position: relative;
+    top: -28px;
+    left: 22px;
+    margin-left: 2px;
+    background: #be1313;
+    clip-path: circle(50%);
+    height: 6px !important;
+    width: 6px !important;
+}
